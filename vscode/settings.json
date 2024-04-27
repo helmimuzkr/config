@@ -131,6 +131,20 @@
         "borderColor : {color}",
         "opacity: 0.5"
     ],
-    "workbench.colorTheme": "Visual Studio Dark",
-    "liveServer.settings.CustomBrowser": "chrome"
+    "liveServer.settings.CustomBrowser": "chrome",
+    "workbench.sideBar.location": "right",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-b>": false,
+        "<C-p>": false,
+        "<C-t>": false
+    }
 }
