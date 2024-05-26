@@ -1,42 +1,43 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": 
-            {
-                "action": "prevTab"
-            },
-            "keys": "alt+1"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right"
-            },
-            "keys": "alt+d"
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": "paste",
             "keys": "ctrl+v"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "keys": "alt+d"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "prevTab"
+            },
+            "keys": "alt+1"
+        },
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": {
+                "action": "closeTab"
+            },
+            "keys": "alt+4"
+        },
+        {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -44,111 +45,90 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
-                "action": "closeTab"
-            },
-            "keys": "alt+4"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "newTab"
             },
             "keys": "alt+3"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "nextTab"
             },
             "keys": "alt+2"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane"
             }
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "down"
             },
             "keys": "alt+s"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "up"
             },
             "keys": "alt+w"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "left"
             },
             "keys": "alt+a"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "right"
             },
-            "keys": "ctrl+;"
+            "keys": "alt+l"
         },
         {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "keys": "alt+;"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "down"
-            },
-            "keys": "ctrl+l"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "left"
-            },
-            "keys": "ctrl+j"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "left"
             },
             "keys": "alt+j"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+h"
+        },
+        {
+            "command": {
                 "action": "moveFocus",
                 "direction": "up"
             },
-            "keys": "ctrl+k"
-        },
-        {
-            "command": "unbound",
             "keys": "alt+k"
         },
         {
             "command": "unbound",
-            "keys": "alt+l"
+            "keys": "ctrl+j"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+l"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+;"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+;"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+k"
         }
     ],
     "copyFormatting": "none",
@@ -157,21 +137,17 @@
     "firstWindowPreference": "defaultProfile",
     "initialCols": 90,
     "initialRows": 15,
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "antialiasingMode": "cleartype",
             "colorScheme": "Campbell",
-            "font": 
-            {
+            "font": {
                 "face": "CaskaydiaCove Nerd Font Mono",
                 "size": 11
             },
             "opacity": 90
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -205,13 +181,14 @@
             {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": true,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
+                "name": "Linux Ubuntu",
+                "opacity": 80,
+                "source": "Windows.Terminal.Wsl",
+                "useAcrylic": false
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
